@@ -3,7 +3,7 @@
 const double ImageSmoother::bataMax = 1E5;
 
 // Description: smooth image.
-void ImageSmoother::smooth(const Mat srcImage, Mat &desImage, const double lambda = 2e-2, const double kappad = 2.0) 
+void ImageSmoother::smooth(const Mat srcImage, Mat &desImage, const double lambda, const double kappad) 
 {
 	srcImage.convertTo(desImage, CV_64FC3, 1.0/255.0);
 	Mat h[3], v[3];

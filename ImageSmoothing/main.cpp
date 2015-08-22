@@ -24,7 +24,7 @@ int main()
 
 	ImageSmoother smoother;
 	Mat smoothImage;
-	smoother.smooth(image, smoothImage, 0.01, 2.0);
+	smoother.smooth(image, smoothImage, 0.01);
 
 	if(!smoothImage.data) 
 	{

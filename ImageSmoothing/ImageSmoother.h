@@ -10,7 +10,7 @@ public:
 	ImageSmoother(){}
 	~ImageSmoother(){}
 
-	void smooth(const Mat srcImage, Mat &desImage, const double lambda, const double kappad);
+	void smooth(const Mat srcImage, Mat &desImage, const double lambda = 2e-2, const double kappad = 2.0);
 
 private:
 	void getHVfromImage(const Mat image, Mat* h, Mat* v, const double boundary);
@@ -27,4 +27,4 @@ private:
 	static const double bataMax;
 };
 
-#endif // !_IMAGE_SMOOTHER_H
+#endif
